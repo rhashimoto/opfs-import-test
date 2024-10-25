@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OPFSCoopSync import test</title>
+  <style>
+    pre {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="log"></div>
+  <script type="module">
+    const log = document.getElementById('log');
+    const worker = new Worker('worker.js', { type: 'module' });
+    worker.addEventListener('message', (event) => {
+      const timestamp = new Date().toLocaleTimeString(undefined, {
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        fractionalSecondDigits: 3
+      });
+      const entry = document.createElement('pre');
+      entry.textContent = `${timestamp} ${event.data}`;
+      log.appendChild(entry);
+    });
+  </script>
+</body>
+</html>

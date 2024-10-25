@@ -1,4 +1,18 @@
 {
   "name": "opfs-import-test",
-  "packageManager": "yarn@4.5.1"
+  "packageManager": "yarn@4.5.1",
+  "scripts": {
+    "start": "web-dev-server --node-resolve"
+  },
+  "dependencies": {
+    "wa-sqlite": "https://github.com/rhashimoto/wa-sqlite.git"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  },
+  "dependenciesMeta": {
+    "wa-sqlite@1.0.3": {
+      "unplugged": true
+    }
+  }
 }

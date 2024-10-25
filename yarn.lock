@@ -1767,9 +1767,6 @@ __metadata:
   dependencies:
     "@web/dev-server": "npm:^0.4.6"
     wa-sqlite: "https://github.com/rhashimoto/wa-sqlite.git"
-  dependenciesMeta:
-    wa-sqlite@1.0.3:
-      unplugged: true
   languageName: unknown
   linkType: soft
 

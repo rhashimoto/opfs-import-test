@@ -9,10 +9,5 @@
   },
   "devDependencies": {
     "@web/dev-server": "^0.4.6"
-  },
-  "dependenciesMeta": {
-    "wa-sqlite@1.0.3": {
-      "unplugged": true
-    }
   }
 }
